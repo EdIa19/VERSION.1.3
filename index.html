@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Grupo 3 Quetzalcoatl</title>
+    <style>
+        header {
+            background-color: #000000; 
+            color: #FFF; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #000000; 
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav li a {
+            color: #FFF; 
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000000; 
+            padding: 10px;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        article {
+            background-color: #000000; 
+            color: #FFF;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        article h2 {
+            color: #1565C0;
+        }
+
+       
+        article#manada h2 {
+            color: yellow;
+        }
+
+        
+        article#tropa h2 {
+            color: green;
+        }
+
+       
+        article#comunidad h2 {
+            color: blue;
+        }
+
+        
+        article#clan\ rover h2 {
+            color: red;
+        }
+        footer {
+            background-color: #000000; 
+            color: #FFF; 
+            text-align: center;
+            padding: 10px;
+        }
+
+       
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#" onclick="mostrarSeccion('quienes-somos')">Grupo 3 Quetzalcoatl</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('quienes-somos')">¿Quienes somos?</a></li>
+            <li><a href="#" onclick="mostrarSeccion('acerca')">Acerca de</a></li>
+            <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            <li>
+                <a href="#">Secciones.</a>
+                <ul>
+                    <li><a href="#" onclick="mostrarSubseccion('manada')">Manada</a></li>
+                    <li><a href="#" onclick="mostrarSubseccion('tropa')">Tropa</a></li>
+                    <li><a href="#" onclick="mostrarSubseccion('comunidad')">Comunidad</a></li>
+                    <li><a href="#" onclick="mostrarSubseccion('clan rover')">Clan Rover</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article id="quienes-somos">
+            <h2>¿Qué es ser scout?</h2>
+            <p>Ser scout es formar parte de un movimiento educativo mundial, el cual busca desarrollar habilidades y valores en los jóvenes para que sean ciudadanos comprometidos, responsables, solidarios y respetuosos.</p>
+            <h2>Origen del Movimiento Scout</h2>
+            <p>El movimiento scout fue fundado por <span style="color: #1565C0;">Lord Robert Baden-Powell</span> en 1907. Baden-Powell fue un militar británico que adaptó sus experiencias en el ejército para crear un sistema de educación no formal enfocado en la naturaleza y el trabajo en equipo.</p>
+            <h2>El scoutismo llega a México</h2>
+            <p>El movimiento scout llegó a México en 1920, cuando un grupo de jóvenes mexicanos asistió a un campamento scout en Estados Unidos. A partir de ese momento, se establecieron los primeros grupos scouts en México, y el movimiento ha crecido y prosperado desde entonces.</p>
+        </article>
+        <article id="acerca">
+            <h2>Acerca de</h2>
+            <p>Esta es una página desarrollada por el Grupo 3 Quetzalcoatl "Estado de Mexico" para darse a conocer.</p>
+        </article>
+        <article id="manada">
+            <h2>Manada de Lobatos</h2>
+            <p>Una "manada de lobatos" se refiere a un grupo de niños y niñas que participan en el movimiento scout, específicamente en la sección de lobatos. El término "lobatos" es utilizado en varios países para designar a los miembros más jóvenes de los scouts. Por ejemplo, en el Movimiento Scout en España, la sección de lobatos está destinada a niños y niñas de entre 8 y 11 años.</p>
+            
+        </article>
+        <article id="tropa"> 
+            <h2>Tropa</h2>
+            <p>Una "tropa de scouts" se refiere a un grupo de niños y niñas que forman parte del movimiento scout y que se encuentran en una etapa más avanzada que los lobatos. La sección de tropa está diseñada para jóvenes entre 11 y 14 años, aproximadamente, aunque la edad exacta puede variar según el país y la asociación scout.</p>
+            
+        </article>        
+        <article id="comunidad">
+            <h2>Comunidad</h2>
+            <p>En el movimiento scout, una comunidad es un grupo de jóvenes scouts que se unen para compartir experiencias, aprender juntos y desarrollar amistades duraderas. Las comunidades suelen estar formadas por varios equipos scout.</p>
+            <h2>Equipos Scout</h2>
+            <p>Un equipo scout es un grupo más pequeño dentro de la comunidad, generalmente compuesto por jóvenes de la misma edad o etapa de desarrollo. Los equipos scout trabajan juntos en actividades, juegos y proyectos para fortalecer el trabajo en equipo y fomentar el compañerismo.</p>
+            <h2>Equipos</h2>
+            <p>El Grupo 3 Quetzalcoatl cuenta con 3 equipos de la comunidad:</p>
+            <h2>Equipo Ahuitzotl</h2>
+            <p>Está conformado por Marbella y Ernesto.</p>
+            <h2>Equipo Aztlan</h2>
+            <p>Está conformado por Paulina, Ali, Eduardo y Francisco.</p>
+            <h2>Equipo Teocali</h2>
+            <p>Está conformado por Lorena, Itzel, Val y Biali.</p>
+        </article>
+        <article id="clan rover"> 
+            <h2>Clan Rover</h2>
+            <p>Un "Clan de Rover Scout" o simplemente "Clan Scout" es la última etapa dentro del movimiento scout destinada a jóvenes adultos, generalmente de 18 a 26 años. Los Rovers son scouts que han pasado por las etapas previas del movimiento, como la manada de lobatos y la tropa de scouts, y han alcanzado la edad en la que se convierten en adultos jóvenes.</p>
+           
+        </article>
+        <article id="contacto">
+            <p>Encuéntranos en Facebook:</p>
+        <a href="https://www.facebook.com/profile.php?id=100083019266918" target="_blank">Facebook</a>
+        </article>
+    </main>
+    <footer>
+        <p>Derechos de autor &copy; 2023 - Eduardo Iglesias</p>
+    </footer>
+
+    <script>
+        
+
+        function mostrarSeccion(seccion) {
+            const secciones = document.querySelectorAll('main > article');
+            secciones.forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+
+            const seccionSeleccionada = document.getElementById(seccion);
+            seccionSeleccionada.style.display = 'block';
+        }
+
+        function mostrarSubseccion(subseccion) {
+            const subsecciones = document.querySelectorAll('#secciones > div');
+            subsecciones.forEach(subseccion => {
+                subseccion.style.display = 'none';
+            });
+
+            const subseccionSeleccionada = document.getElementById(subseccion);
+            subseccionSeleccionada.style.display = 'block';
+        }
+    </script>
+        <script defer src="https://app.embed.im/snow.js"></script>
+
+
+</body>
+</html>
